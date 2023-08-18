@@ -404,8 +404,8 @@ img {
 }
 
 .hm-about--image img {
-  max-width: 45rem;
-  max-height: 45rem;
+  max-width: 40rem;
+  max-height: 40rem;
 }
 
 .hm-about--image {
@@ -415,8 +415,8 @@ img {
 .hm-about--image::before {
   content: "";
   position: absolute;
-  width: 45rem;
-  height: 45rem;
+  width: 40rem;
+  height: 40rem;
   background: #ffa700;
   z-index: 9;
   top: 0;
