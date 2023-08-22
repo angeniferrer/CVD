@@ -134,6 +134,7 @@ img {
   position: fixed;
   z-index: 999;
   width: 100%;
+  box-shadow: 0px 4px 4px rgba (0, 0, 0, 50%);
 }
 
 .header--nav {
@@ -592,7 +593,8 @@ img {
 }
 
 .about-f1 {
-  padding: 10rem 0;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
 }
 
 .about-f1--wrapper {
@@ -761,6 +763,7 @@ img {
 /* ABOUT-FOOTER */
 .about-footer {
   background: #2b2b2b;
+  border-top: 1px solid rgba(255, 255, 255, 25%);
 }
 
 .about-footer--icon {
@@ -826,13 +829,13 @@ img {
 }
 
 .services--wrapper img {
-  max-width: 50rem;
-  min-width: 50rem;
+  max-width: 40rem;
+  min-width: 40rem;
 }
 
 .services--image1 img {
-  max-width: 50rem;
-  max-height: 50rem;
+  max-width: 40rem;
+  max-height: 40rem;
 }
 
 .services--image1 {
@@ -842,8 +845,8 @@ img {
 .services--image1::before {
   content: "";
   position: absolute;
-  width: 50rem;
-  height: 50rem;
+  width: 40rem;
+  height: 40rem;
   background: #ffa700;
   z-index: 9;
   top: 0;
@@ -852,10 +855,11 @@ img {
 }
 
 .services--bannertext1 h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
   color: #ffa700;
   padding: 3rem 0;
+  line-height: 7rem;
 }
 
 .services--bannertext1 p {
@@ -895,8 +899,8 @@ img {
 }
 
 .services--image2 img {
-  max-width: 50rem;
-  max-height: 50rem;
+  max-width: 40rem;
+  max-height: 40rem;
 }
 
 .services--image2 {
@@ -905,16 +909,16 @@ img {
 }
 
 .services--bannertext2 h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
   color: #ffa700;
   padding: 3rem 0;
   padding-left: 2.5rem;
+  line-height: 7rem;
 }
 
 .services--bannertext2 p {
   padding: 2rem 0;
-  padding-left: 2.5rem;
   text-align: justify;
   color: #fff;
 }
@@ -996,11 +1000,12 @@ img {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 3rem;
 }
 
 .services--image3 img {
-  max-width: 50rem;
-  max-height: 50rem;
+  max-width: 40rem;
+  max-height: 40rem;
 }
 
 .services--image3 {
@@ -1010,8 +1015,8 @@ img {
 .services--image3::before {
   content: "";
   position: absolute;
-  width: 50rem;
-  height: 50rem;
+  width: 40rem;
+  height: 40rem;
   background: #ffa700;
   z-index: 9;
   top: 0;
@@ -1020,16 +1025,16 @@ img {
 }
 
 .services--bannertext3 h1 {
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: bold;
   color: #ffa700;
   padding: 3rem 0;
   padding-left: 2.5rem;
+  line-height: 7rem;
 }
 
 .services--bannertext3 p {
   padding: 2rem 0;
-  padding-left: 2.5rem;
   text-align: justify;
 }
 
@@ -1071,6 +1076,281 @@ img {
     align-items: center;
     justify-content: space-between;
   }
+
+  .services--bannertext2 p {
+    padding: 2rem 0;
+    padding-left: 2.5rem;
+    text-align: justify;
+    color: #fff;
+  }
+
+  .services--bannertext3 p {
+    padding: 2rem 0;
+    padding-left: 2.5rem;
+    text-align: justify;
+  }
+}
+
+/* UPDATES PAGE */
+
+.updates h2 {
+  font-weight: bold;
+  color: #ffa700;
+  font-size: 3rem;
+}
+
+.updates {
+  /* height: 100vh; */
+  padding-top: 10rem;
+}
+
+.updates .updates--wrapper {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.updates .updates--trends {
+  /* height: 20rem;
+  background: #ffa700; */
+}
+
+.updates .updates--options {
+  /* height: 20rem;
+  background: #2b2b2b; */
+}
+
+.updates .trends--item img {
+  width: 100%;
+}
+
+.updates .trends--item:not(:last-child) {
+  border-bottom: 1px solid #727272;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+.updates .trends--info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.updates .trends--author,
+.updates .trends--date,
+.updates .trends--tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.updates .trends--author p,
+.updates .trends--date p,
+.updates .trends--tags p {
+  font-size: 1.4rem;
+}
+
+.updates .trends--text h4 {
+  color: #ffa700;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.updates .trends--text p {
+  padding: 2rem 0;
+}
+
+.updates .trends--text a {
+  color: #ffa700;
+}
+
+.updates .updates--categories h3,
+.updates .update--post h3,
+.updates .updates--tags h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffa700;
+  letter-spacing: 2px;
+  padding-bottom: 1.5rem;
+}
+
+.updates .updates--categ {
+  display: flex;
+  align-item: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.updates .updates--posts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.updates .updates--post--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.updates .updates--post--text p {
+  padding-top: 3rem;
+}
+
+.updates .updates--post--text h4 {
+  font-weight: bold;
+}
+
+.updates .updates--tags ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.updates .updates--tags ul li a {
+  margin: 0.5rem 1rem;
+  padding: 2rem 2.5rem;
+  text-transform: uppercase;
+}
+
+.updates .updates--options > div {
+  padding: 2rem 0;
+}
+
+.updates .updates--options > div:not(:last-child) {
+  border-bottom: 1px solid #727272;
+}
+
+@media screen and (min-width: 900px) {
+  .updates {
+    padding-bottom: 5rem;
+  }
+
+  .updates h2 {
+    font-size: 4rem;
+  }
+
+  .updates .updates--wrapper {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 8rem;
+  }
+  .updates .updates--options {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .updates .updates--options > div {
+    padding: unset;
+  }
+
+  .updates .updates--options > div:not(:last-child) {
+    padding-bottom: 5rem;
+  }
+}
+
+.contact {
+  padding-top: 10rem;
+  height: calc(100vh - 120px);
+  background: #2b2b2b;
+}
+
+.contact h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ffa700;
+}
+
+.contact p {
+  color: #fff;
+  padding-bottom: 2.5rem;
+}
+
+.contact .contact--phone i,
+.contact .contact--mail i,
+.contact .contact--pin i {
+  color: #ffa700;
+  font-size: 2rem;
+}
+
+.contact .contact--phone,
+.contact .contact--mail,
+.contact .contact--pin {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 1% 1fr;
+}
+
+.contact .contact--phone p,
+.contact .contact--mail p,
+.contact .contact--pin p {
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+}
+
+.contact--icons ul li a {
+  color: #fff;
+}
+
+.contact--icons ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.contact--icons ul li a:hover {
+  color: #ffa700;
+}
+
+.contact .contact--form {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.contact .contact--form input {
+  width: 100%;
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+}
+
+.contact--form .form-group {
+  padding: 1rem 0;
+}
+
+.contact--form .form-group input[placeholder="Message"] {
+  padding-bottom: 8rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact--form a {
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .contact .contact--wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    display: grid;
+  }
+
+  .contact {
+    padding-top: 30rem;
+    height: calc(100vh - 68px);
+  }
+
+  .contact--informations .first {
+    padding: 3rem 0;
+  }
+
+  .contact .contact--form {
+    width: 100%;
+    padding: 7rem 0;
+  }
 }
 
 /* BUTTON */
@@ -1078,7 +1358,7 @@ img {
 .btn {
   display: inline-block;
   padding: 2rem 2rem;
-  border: 1px solid tranparent;
+  border: 1px solid transparent;
   border-radius: 6.4rem;
   transition: 0.3s ease-in-out;
 }
@@ -1104,13 +1384,35 @@ img {
   border: 1px solid #ffa700;
 }
 
-.btn.contact {
+.btn.contacts {
   background: #2b2b2b;
   color: #fff;
 }
 
-.btn.contact:hover {
+.btn.contacts:hover {
   background: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #2b2b2b;
+  color: #2b2b2b;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid #2b2b2b;
+  color: #2b2b2b;
+}
+
+.btn.outline:hover {
+  background: #2b2b2b;
+  color: #fff;
+}
+
+.btn.outline.dark {
+  background: #2b2b2b;
+  color: #fff;
+}
+
+.btn.outline.dark:hover {
+  border: 1px solid #2b2b2b;
+  background: transparent;
   color: #2b2b2b;
 }
